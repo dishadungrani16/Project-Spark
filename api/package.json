@@ -1,0 +1,19 @@
+{
+  "name": "pulse-pro-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/node": "^18.16.0",
+    "typescript": "^5.0.4"
+  }
+} 
