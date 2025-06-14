@@ -10,19 +10,25 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Pulse Pro',
-        short_name: 'PulsePro',
-        description: 'Amazon Fulfillment Center PWA',
-        theme_color: '#ffffff',
+        short_name: 'Pulse Pro',
+        description: 'Amazon Fulfillment Center Performance Monitoring PWA',
+        theme_color: '#000000',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: '/assets/icons/icon-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/assets/icons/icon-512x512.png',
             sizes: '512x512',
             type: 'image/png'
+          },
+          {
+            src: '/assets/icons/maskable-icon.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
           }
         ]
       },
@@ -53,4 +59,4 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true
   }
-}); 
+});
