@@ -13,18 +13,18 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
-      "src": "/service-worker.js",
-      "dest": "/frontend/public/service-worker.js"
+      "source": "/service-worker.js",
+      "destination": "/frontend/public/service-worker.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/frontend/dist/$1"
+      "source": "/(.*)",
+      "destination": "/frontend/dist/$1"
     }
   ],
   "headers": [
@@ -50,4 +50,4 @@
       ]
     }
   ]
-} 
+}
